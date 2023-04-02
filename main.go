@@ -2,12 +2,16 @@ package main
 
 import (
 	//"fmt"
-	//"runtime"
-	//"github.com/luifer63/godesde0/variables"
-	"github.com/luifer63/godesde0/ejercicios"
-	//"github.com/luifer63/godesde0/teclado"
-	//"github.com/luifer63/godesde0/iteraciones"
+//"runtime"
+//"github.com/luifer63/godesde0/variables"
+
+//"github.com/luifer63/godesde0/ejercicios"
+//"github.com/luifer63/godesde0/teclado"
+//"github.com/luifer63/godesde0/iteraciones"
+ 	"github.com/luifer63/godesde0/files"
 )
+
+
 
 // funcion principal de go
 func main(){
@@ -38,5 +42,9 @@ func main(){
 
 	//iteraciones.Iterar()
 
-	ejercicios.TablaDelNumero()
+	//fmt.Println(ejercicios.TablaDelNumero())
+
+	//files.GrabaTabla()
+	//files.SumaTabla()
+	files.LeoArchivo2()
 }

@@ -9,8 +9,9 @@ import (
 
 var numero int
 var err error
+var texto string
 
-func TablaDelNumero() {
+func TablaDelNumero() string {
 	for {
 		scanner := bufio.NewScanner(os.Stdin)
 		fmt.Println("Ingrese número: ")
@@ -20,10 +21,11 @@ func TablaDelNumero() {
 				fmt.Println("El dato ingresado es incorrecto " + err.Error())
 			} else {
 				for i := 1; i <= 10; i++ {
-					fmt.Printf("%d x %d = %d \n", numero, i, numero*i)
+					texto += fmt.Sprintf("%d x %d = %d \n", numero, i, numero*i)
 				}
 				break
 			}
 		}
 	}
+	return texto
 }
