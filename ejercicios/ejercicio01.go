@@ -1,17 +1,17 @@
 package ejercicios
 
 import (
-	//"fmt"
 	"strconv"
 )
 
 func DevolverEntero(numero string)(int, string){
-
-	if entero, error := strconv.Atoi(numero); entero >= 100{
+	entero, error := strconv.Atoi(numero)
+	if error != nil{
+		return entero, "Hubo un error " + error.Error()
+	}
+	if  entero >= 100{
 		return entero, "Es mayor a 100"
-	}else if entero < 100{
-		return entero, "Es menor a 100"
 	}else{
-		return entero, error.Error()
-	} 
+		return entero, "Es menor a 100"
+	}
 }
