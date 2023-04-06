@@ -8,7 +8,8 @@ import (
 //"github.com/luifer63/godesde0/ejercicios"
 //"github.com/luifer63/godesde0/teclado"
 //"github.com/luifer63/godesde0/iteraciones"
- 	"github.com/luifer63/godesde0/files"
+ 	//"github.com/luifer63/godesde0/files"
+	 "github.com/luifer63/godesde0/mapas"
 )
 
 
@@ -46,5 +47,12 @@ func main(){
 
 	//files.GrabaTabla()
 	//files.SumaTabla()
-	files.LeoArchivo2()
+	//files.LeoArchivo2()
+
+	//funciones.Exponencia(2)
+
+	//arreglos_slices.MuestroArreglo()
+	//arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
+
 }
