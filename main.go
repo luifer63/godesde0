@@ -1,10 +1,10 @@
 package main
 
-import (	
-	 "github.com/luifer63/godesde0/defer_panic"
+import (
+	"fmt"
+
+	"github.com/luifer63/godesde0/goroutines"
 )
-
-
 
 // funcion principal de go
 func main(){
@@ -55,6 +55,15 @@ func main(){
 	// e.HumanosRespirando(Maria)
 
 	//defer_panic.VemosDefer()
-	defer_panic.EjemploPanic()
+	//defer_panic.EjemploPanic()
+	
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Luis Fernando", canal1)
+
+	defer func() {
+		<- canal1
+	}()
+
+	fmt.Println("Estoy aquí")		
 
 }
