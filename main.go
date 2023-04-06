@@ -1,15 +1,8 @@
 package main
 
 import (
-	//"fmt"
-//"runtime"
-//"github.com/luifer63/godesde0/variables"
-
-//"github.com/luifer63/godesde0/ejercicios"
-//"github.com/luifer63/godesde0/teclado"
-//"github.com/luifer63/godesde0/iteraciones"
- 	//"github.com/luifer63/godesde0/files"
-	 "github.com/luifer63/godesde0/mapas"
+	 e "github.com/luifer63/godesde0/ejer_interfaces"	 
+	 "github.com/luifer63/godesde0/modelos"
 )
 
 
@@ -53,6 +46,13 @@ func main(){
 
 	//arreglos_slices.MuestroArreglo()
 	//arreglos_slices.Capacidad()
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+	//users.AltaUsuario()
+
+	Pedro:=new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria:=new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
 
 }
