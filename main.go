@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 
-	"github.com/luifer63/godesde0/goroutines"
+	"github.com/luifer63/godesde0/middleware"
 )
 
 // funcion principal de go
@@ -57,13 +57,16 @@ func main(){
 	//defer_panic.VemosDefer()
 	//defer_panic.EjemploPanic()
 	
-	canal1 := make(chan bool)
-	go goroutines.MiNombreLento("Luis Fernando", canal1)
+	// canal1 := make(chan bool)
+	// go goroutines.MiNombreLento("Luis Fernando", canal1)
 
-	defer func() {
-		<- canal1
-	}()
+	// defer func() {
+	// 	<- canal1
+	// }()
 
-	fmt.Println("Estoy aquí")		
+	// fmt.Println("Estoy aquí")		
+
+	//webserver.MiWebServer()
+	middleware.MiMiddleWare()
 
 }
